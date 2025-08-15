@@ -15,36 +15,52 @@ Features
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+
+- anaconda prompt
+- anaconda navigation(to create enveronment)
 - TensorFlow / Keras
-- OpenCV
 - Flask (for web interface)
 
 ---
+# 🔧 Setup Instructions
+Follow the steps below to set up and run the project on your local machine.
+### 🛠️ 1. Create Environment (Anaconda)
+Open Anaconda Navigator, then:
 
-### Installation
-
-#### Clone the Repository
-```bash
-git clone <your-repo-link>
-cd fire-detection-cnn
+1.Create a new environment
+2.Open Anaconda Prompt and activate your environment:
 ```
-### 1.Install Dependencies
+activate env
 ```
-pip install -r requirements.txt
-
+Replace env with your actual environment name.
+### 📂 2. Navigate to the modelcreate Folder
+Change directory to the folder where the model training script exists:
 ```
-
-### 2.Run the Application
+cd C:\Users\DELL\OneDrive\Desktop\fire-detection-cnn\modelcreate
 ```
+### 🧠 3. Run the Model Creation Script
+Now run the training script to create your CNN model:
+```
+python create.py
+```
+After successful execution, this will generate a trained model file (cnn.h5 or similar).
+### 📁 4. Move the Model to Application Folder
+Copy the generated CNN model file to your application folder.
+### 🚀 5. Run the Flask Application
+Navigate to your application folder:
+```
+cd C:\Users\DELL\OneDrive\Desktop\fire-detection-cnn\application
 python app.py
-
 ```
-### 3.Open the Website
+### 6.Wait for Server Initialization:
+Once the script runs successfully, you will see output in the terminal indicating that the Flask development server is running.
+### 🔗 Access the Web Interface:
+After successful launch, you’ll see a local URL in the terminal, usually:
 ```
- http://127.0.0.1:5000
-
+http://127.0.0.1:5000/
 ```
+Open this link in your web browser to access the application’s user interface.
+### 🔥👾 Interact with the Application:
+Once the UI loads, you can start testing and using the fire detection system.
 # 📁 Project Structure
 ```fire-detection-cnn/
 ├── README.md                 # Project documentation
